@@ -19,7 +19,6 @@
       font-size: xx-large;
       margin-top: 10px;
       margin-bottom: 10px;
-
     }
 
     .title-grid {
@@ -42,6 +41,14 @@
       align-content: center;
     }
 
+    /* 마우스커서 변경 */
+    * {
+      cursor: url("./images/jangjak-emoji-24px.png"), auto;
+    }
+
+    .door {
+      cursor: url("./images/apple-key-emoji-24px.png"), auto;
+    }
     
   </style>
 </head>
@@ -191,8 +198,10 @@
           </svg>
         </div>
         <div class="aqua 64"></div>
-        <div class="aqua 65 door">
-          <img src="./images/apple-door-emoji.png" width="30vh" alt="door">
+        <div id="door" class="aqua 65 door">
+          <a href="./intro-what.html" class="door">
+          <img src="./images/apple-door-emoji.png" class="door" width="30vh" alt="door">
+          </a>
           </div>
         <div class="aqua 66">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
